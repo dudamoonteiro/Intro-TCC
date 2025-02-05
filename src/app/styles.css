@@ -1,0 +1,16 @@
+.corpo {
+    background-image: url(/fundoLogin.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.form {
+    background-color: #FFD288;
+    border-radius: 25px;
+    width: 45vh;
+    height: 50vh;
+    margin: 70px;
+
+}

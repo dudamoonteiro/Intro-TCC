@@ -1,0 +1,13 @@
+html, body{
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  background-color: transparent
+}
+
+.mynav{
+  background-color: #FFA411;
+  font-family: robo;
+  color: white;
+}
