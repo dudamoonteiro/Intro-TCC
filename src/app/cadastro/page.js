@@ -1,8 +1,8 @@
 'use client'
 
 import Image from "next/image";
-import styles from "./page.module.css";
-import { MyNavbar } from "../../components/NavBar";
+import styles from "./cadastro.module.css";
+import { MyNavbar } from "../../../components/NavBar";
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
@@ -10,13 +10,13 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import Row from 'react-bootstrap/Row';
 import * as formik from 'formik';
 import * as yup from 'yup';
-import './globals.css';
+import './../globals.css';
 
 import './styles.css'
-import MyInput from "../../components/MyInput/MyInput";
+import MyInput from "../../../components/MyInput/MyInput";
 
 
-function Home() {
+function Cadastro() {
 
   const { Formik } = formik;
 
@@ -33,7 +33,7 @@ function Home() {
   return (
     <>
       <MyNavbar></MyNavbar>
-      <div className="d-flex justify-content-end w-100 corpo">
+      <div className="d-flex align-items-end w-100 corpo2 flex-column">
         <Formik
           validationSchema={schema}
           onSubmit={console.log}
@@ -49,10 +49,12 @@ function Home() {
         >
           {({ handleSubmit, handleChange, values, touched, errors }) => (
             <Form noValidate onSubmit={handleSubmit} className="form align-items-end justify-content-end">
-              <h1 className={styles.title}>Login</h1>
+              <h1 className={styles.title}>Cadastrar</h1>
               <Row className="mb-column w-100">
                 <MyInput title={'Ramal'} className='w-100 rounded-3'></MyInput>
+                <MyInput title={'Email'} className='w-100 rounded-3'></MyInput>
                 <MyInput title={'Senha'} className='w-100 rounded-3'></MyInput>
+
               </Row>
               <Row className="flex-row gap-3 w-100 d-flex justify-content-center">
                 <button type="button" className="w-25 btn btn-outline-success">Entrar</button>
@@ -61,15 +63,15 @@ function Home() {
 
             </Form>
           )}
+          
         </Formik>
+        <div className="align-items-start w-100 boasVindas">
+        <h4 className="boasVindas">Sua entrega realizada com eficiência e comodidade
+        dentro do seu condomínio.</h4>
+        </div>
       </div>
-      <div className="boasVindas">
-        <h3>Seu pedido entregue no coração do seu condomínio.</h3>
-
-      </div>
-
     </>
   );
 }
 
-export default Home;
+export default Cadastro;

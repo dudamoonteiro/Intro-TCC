@@ -38,6 +38,27 @@ body{
     pointer-events: none; /* Garante que não interfira com interações na página */
 }
 
+.corpo2 {
+  position: relative;
+  /* Utiliza shorthand para background, garantindo que a imagem fique centralizada e com cover */
+  background: url('/fundoCadastro.jpg') center center/cover no-repeat;
+  width: 100%;
+  /* Se desejar ocupar 85% da altura da viewport, pode usar 85vh */
+  height: 85vh;
+}
+
+.corpo2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Gradiente que vai de transparente para a cor final */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, #DDD4CE 100%);
+  pointer-events: none; /* Não interfere com interações do usuário */
+}
+
 
 .form {
     background-color: rgb(255, 210, 136, 0.75);
@@ -47,7 +68,6 @@ body{
     height: 50vh;
     margin: 150px;
     margin-right: 250px;
-    
 }
 
 .boasVindas{

@@ -4,6 +4,7 @@ import Form from 'react-bootstrap/Form';
 import Col from 'react-bootstrap/Col';
 import style from './page.module.css'
 
+
 export default function MyInput({
   title,
   name,

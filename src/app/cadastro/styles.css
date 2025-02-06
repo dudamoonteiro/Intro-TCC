@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    position: relative;
+    background: linear-gradient(to bottom, #DDD4CE 0%, #DDD4CE 100%);
+    height: 100vh;
+    overflow-y: auto;
+    scrollbar-width: auto; /* Firefox: oculta a barra */
+}
+
+body{
+    overflow-y: hidden;
+
+}
+.corpo2{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-image: url(/fundoCadastro.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 85%;
+}
+
+.corpo2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, #DDD4CE 100%);
+    pointer-events: none; /* Garante que não interfira com interações na página */
+}
+
+
+.form {
+    background-color: rgb(255, 210, 136, 0.75);
+    border-color: #FFD288;
+    border-radius: 25px;
+    width:43vh;
+    height: 80vh;
+    margin: 100px;
+    margin-right: 250px;
+    
+}
+
+
+.boasVindas{
+    width: fit-content;
+    height: fit-content;
+    color: #805209;
+    font-family: "Roboto", serif;
+    margin-left: 50px;
+    margin-bottom: 100px;
+    z-index: 2;
+    width: 30%;
+  
+}
