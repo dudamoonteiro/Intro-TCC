@@ -2,12 +2,13 @@
 
 .form {
     font-family: "Roboto", serif;
-    font-size: larger;
+    font-size: x-large;
     font-weight: bold;
     background-color: transparent;
     color: #805209;
     margin: 35px;
-
+    height: 80%;
+    background-color: transparent;
 }
 
 .form input:focus,

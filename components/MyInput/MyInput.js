@@ -20,7 +20,7 @@ export default function MyInput({
       controlId={`validationFormik${name}`}
       className={`w-75 ${style.form}`}
     >
-      <Form.Label className="ms-2">{title}</Form.Label>
+      <Form.Label className="">{title}</Form.Label>
       <Form.Control
         className=""
         type="text"

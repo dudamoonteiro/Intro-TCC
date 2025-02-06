@@ -34,32 +34,40 @@ function Home() {
     <>
       <MyNavbar></MyNavbar>
       <div className="d-flex justify-content-end w-100 corpo">
-      <Formik
-        validationSchema={schema}
-        onSubmit={console.log}
-        initialValues={{
-          firstName: '',
-          lastName: '',
-          username: '',
-          city: '',
-          state: '',
-          zip: '',
-          terms: false,
-        }}
-      >
-        {({ handleSubmit, handleChange, values, touched, errors }) => (
-          <Form noValidate onSubmit={handleSubmit} className="flex-column  form align-items-end">
-            <h1 className={styles.title}>Login</h1>
-            <Row className="mb-3 flex-column w-100">
-              <MyInput title={'Ramal'} className='w-100 rounded-pill'></MyInput>
-              <MyInput title={'Senha'} className='w-100 rounded-pill'></MyInput>
-            </Row>
-            <Button type="submit">Submit form</Button>
-          </Form>
-        )}
-      </Formik>
+        <Formik
+          validationSchema={schema}
+          onSubmit={console.log}
+          initialValues={{
+            firstName: '',
+            lastName: '',
+            username: '',
+            city: '',
+            state: '',
+            zip: '',
+            terms: false,
+          }}
+        >
+          {({ handleSubmit, handleChange, values, touched, errors }) => (
+            <Form noValidate onSubmit={handleSubmit} className="form align-items-end justify-content-end">
+              <h1 className={styles.title}>Login</h1>
+              <Row className="mb-column w-100">
+                <MyInput title={'Ramal'} className='w-100 rounded-3'></MyInput>
+                <MyInput title={'Senha'} className='w-100 rounded-3'></MyInput>
+              </Row>
+              <Row className="flex-row gap-3 w-100 d-flex justify-content-center">
+                <button type="button" className="w-25 btn btn-outline-success">Entrar</button>
+                <button type="button" className="w-50 btn btn-outline-danger">Esqueci Senha</button>
+              </Row>
+
+            </Form>
+          )}
+        </Formik>
       </div>
-      
+      <div className="boasVindas">
+        <h3>Seu pedido entregue no coração do seu condomínio.</h3>
+
+      </div>
+
     </>
   );
 }
