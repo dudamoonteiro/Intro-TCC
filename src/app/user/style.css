@@ -4,6 +4,12 @@ body{
     background-color: #DDD4CE;
 }
 
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Pelo menos o tamanho total da tela */
+  }
+
 .icone{
  width: 100px;
  height: 100px;
@@ -32,7 +38,7 @@ header{
     
 }
 
-img{
+.img{
     width: 100px;
     height: 100px;
 }
@@ -47,30 +53,17 @@ h1{
     width: 100%; 
 }
 .retangulo{
-    height: 700px;
-    width: 400px;
+    height: 500px;
+    width: 300px;
     background: linear-gradient(to top, #DDD4CE, #FFA411);
-    display: flex;
-    align-items: center;
-    justify-content:space-around;
-    flex-direction: column;
-    padding: 70px;
-}
-.bloco{
-    width: 250px;
-    height: 170px;
-    background-color: #805209;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
 }
 
-h2{
-    font-size: 30px;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+.footer-container {
+    width: 100%;
+    background-color: #333; /* Cor de fundo do rodapé */
+    color: white; /* Cor do texto */
+    padding: 20px;
+    text-align: center;
+    flex-shrink: 0; /* Impede que o footer encolha */
+    flex-grow: 1;
+  }

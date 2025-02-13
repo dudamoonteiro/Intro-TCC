@@ -23,21 +23,27 @@ function Adm() {
 
             </header>
 
-            <main>
+            <main>  
                 <div className="container">
                     <div className="retangulo">
-                        <div className="bloco"> <img src="/sugestão.png" alt="" />
-                        </div>
+                            <div className="bloco"> <img src="/sugestão.png" alt="" />
+                            </div>
+                            <h2>Sugestões</h2>
                         <div className="bloco"> <img src="/entregas.png" alt="" /></div>
+                        <h2>Entregas</h2>
                     </div>
 
                     <div className="retangulo">
                         <div className="bloco"> <img src="/alerta.png" alt="" /></div>
+                        <h2>Avisos</h2>
                         <div className="bloco"> <img src="/addUser.png" alt="" /></div>
+                        <h2>Cadastrar usuário</h2>
                     </div>
                     <div className="retangulo">
                         <div className="bloco"> <img src="/camera.png" alt="" /></div>
+                        <h2>Câmera</h2>
                         <div className="bloco"> <img src="/deleteUser.png" alt="" /></div>
+                        <h2>Deletar usuário</h2>
                     </div>
                 </div>
 

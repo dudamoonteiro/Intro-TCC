@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+.bloco{
+    background-color: #805209 !important;
+    border-radius: 20px;
+    height: 150px;
+}
+
+h2{
+    font-size: 30px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.descript{
+    font-size: large;
+    color: #805209 !important;
+}
+
+
+.button{
+    background-color: #805209 !important;
+    border: transparent;
+}
