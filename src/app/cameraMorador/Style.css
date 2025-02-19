@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 body{
-    background-color: #DDD4CE;
+    position: relative;
+    background: linear-gradient(to bottom, #FFA411 51%, #DDD4CE 100%);
     overflow-y: hidden;
 }
 
@@ -23,6 +24,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
+
 }
 header{
     display: flex;
@@ -37,41 +40,15 @@ img{
     width: 100px;
     height: 100px;
 }
-
-h1{
-    font-family: "Roboto", serif;
+.camera{
+    width: 1000px;
+    height: 600px;
+    background-color: black;
 }
 
-.container { 
-    display: flex; 
-    justify-content: space-between; 
-    width: 100%; 
-}
-.retangulo{
-    height: 700px;
-    width: 400px;
-    background: linear-gradient(to top, #DDD4CE, #FFA411);
+main{
+    padding: 40px;
     display: flex;
-    align-items: center;
-    justify-content:space-around;
-    flex-direction: column;
-    padding: 70px;
-}
-.bloco{
-    width: 250px;
-    height: 170px;
-    background-color: #805209;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    
-}
-
-h2{
-    font-size: 30px;
-    padding: 10px;
-    display: flex;
     align-items: center;
-    justify-content: center;
 }
