@@ -5,10 +5,12 @@ import './style.css'
 function Entregas() {
     return (
         <>
-            <header>
+             <header>
                 <div className="navbar">
+                <div className='logo'><img src="/icone.png" alt="" />
                     <h1>COND TRACK</h1>
-                    <h4>Entregas Pendentes</h4>
+                    <h5>Entregas Pendentes</h5>
+                    </div>
                 </div>
                 <div className="barra"></div>
             </header>
