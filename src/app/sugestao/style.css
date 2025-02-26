@@ -16,8 +16,6 @@ p {
     width: 100%;
     background-color: #FFA411;
     color: white;
-
-
 }
 
 .header {
@@ -92,6 +90,11 @@ h5 {
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
+}
+.barra seta{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }

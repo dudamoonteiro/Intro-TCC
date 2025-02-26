@@ -8,9 +8,11 @@ function Sugestao() {
         <>
             <header>
                 <div className="navbar">
-                <div className='logo'><img src="/icone.png" alt="" />
-                    <h1>COND TRACK</h1>
-                    <h5>Adicione Sugestões</h5>
+                <img src="/seta.png" alt="" />
+                    <div className='logo'>
+                        <img src="/icone.png" alt="" />
+                        <h1>COND TRACK</h1>
+                        <h5>Adicione Sugestões</h5>
                     </div>
                 </div>
                 <div className="barra"></div>
@@ -18,9 +20,9 @@ function Sugestao() {
 
             <main>
                 <div className='grande'>
-                <div className='entrega'>
-                    <h3>Escreva sua sugestão</h3>
-                    <img src="/idea.png" alt="" /></div>
+                    <div className='entrega'>
+                        <h3>Escreva sua sugestão</h3>
+                        <img src="/idea.png" alt="" /></div>
                 </div>
 
                 <div className='barras'>

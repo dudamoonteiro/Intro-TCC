@@ -2,10 +2,9 @@
 
 body {
     background-color: #f5a623;
-    /* Cor de fundo do header */
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
     position: relative;
-
+ 
 }
 
 .circle {
@@ -43,8 +42,58 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+
+
 }
-p{
+h3{
     font-family: 'Roboto', sans-serif;
     margin: 20px
+}
+
+.quadrados{
+    display: flex;
+    gap:60px;
+}
+.quadrado{
+    width: 200px;
+    height: 200px;
+    background-color: #FFE3B5;
+    margin:0 auto;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+.quadrado img{
+    width: 150px;
+    height: 150px;
+    
+}
+.texto{
+    color: #805209;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+.bloco{
+    width: 498px;
+    height: 60px;
+    background-color: #FFD288;
+    border-radius: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+h4{
+    font-family: 'Roboto', sans-serif;
+    color: #805209;
 }
