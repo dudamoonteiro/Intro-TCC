@@ -51,9 +51,9 @@ function TrocarSenha() {
                     />
 
                   
-                    <div className='enviar' onClick={alterarSenha}>
+                    <button className='enviar' onClick={alterarSenha}>
                         <h5>Confirmar nova senha</h5>
-                    </div>
+                    </button>
 
                
                     {mensagem && <p className="mensagem">{mensagem}</p>}

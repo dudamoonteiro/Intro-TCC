@@ -17,37 +17,37 @@ import { Container } from "react-bootstrap";
 function Adm() {
     return (
         <>
-        <div className="page-container">
+            <div className="page-container">
 
 
-            <header>
-                <div className="icone"> <img src="/icone.png" className="img" alt="logo.png" /></div>
-                <div className="barra">
-                    <h1>title</h1>
-                </div>
+                <header>
+                    <div className="icone"> <img src="/icone.png" className="img" alt="logo.png" /></div>
+                    <div className="barra">
+                        <h1>title</h1>
+                    </div>
 
-            </header>
+                </header>
 
-            <main>
-                <div className="container">
-                    <Maincard className="retangulo" src='/camera.png' buttonText={"Câmeras"}>Tenha acesso à vigilância da portaria 24 horas
-                        por dia e acompanhe em tempo real a chegada
-                        da sua entrega com segurança e tranquilidade.</Maincard>
+                <main>
+                    <div className="container">
+                        <Maincard className="retangulo" src='/camera.png' buttonText={"Câmeras"}>Tenha acesso à vigilância da portaria 24 horas
+                            por dia e acompanhe em tempo real a chegada
+                            da sua entrega com segurança e tranquilidade.</Maincard>
 
-                    <Maincard className="retangulo" src='/sugestão.png' buttonText={"Sugestões"}>Contribua com sugestões construtivas para
-                        aprimorar sua experiência e tornar seu lar ainda mais
-                        confortável e acolhedor.</Maincard>
+                        <Maincard className="retangulo" src='/sugestão.png' buttonText={"Sugestões"}>Contribua com sugestões construtivas para
+                            aprimorar sua experiência e tornar seu lar ainda mais
+                            confortável e acolhedor.</Maincard>
 
-                    <Maincard className="retangulo" src='/entregas.png' buttonText={"Entregas"}>Acompanhe com facilidade a lista
-                        de encomendas na portaria e seja notificado assim que
-                        a sua estiver disponível.</Maincard>
-                </div>
-            </main>
-            <footer className="footer-container mt-5"> {/* O footer agora cresce para ocupar o espaço vazio */}
-                <Container className="footer-container w-75 bg-primary">
-                    <p>Seu texto do rodapé aqui</p>
-                </Container>
-            </footer>
+                        <Maincard className="retangulo" src='/entregas.png' buttonText={"Entregas"}>Acompanhe com facilidade a lista
+                            de encomendas na portaria e seja notificado assim que
+                            a sua estiver disponível.</Maincard>
+                    </div>
+                </main>
+                <footer className="footer-container mt-5"> {/* O footer agora cresce para ocupar o espaço vazio */}
+                    <Container className="footer-container w-75 bg-primary">
+                        <p>Seu texto do rodapé aqui</p>
+                    </Container>
+                </footer>
             </div>
         </>
     );
