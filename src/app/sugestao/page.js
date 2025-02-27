@@ -8,12 +8,12 @@ function Sugestao() {
         <>
             <header>
                 <div className="navbar">
-                <img src="/seta.png" alt="" />
                     <div className='logo'>
                         <img src="/icone.png" alt="" />
                         <h1>COND TRACK</h1>
                         <h5>Adicione Sugestões</h5>
                     </div>
+
                 </div>
                 <div className="barra"></div>
             </header>

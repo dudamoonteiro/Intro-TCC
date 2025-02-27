@@ -1,8 +1,11 @@
 'use client'
 import './../globals.css';
 import './style.css'
+import { useState } from 'react';
 
 function Codigo() {
+    const [email, setEmail] = useState('');
+
     return (
         <>
             <header>
@@ -14,7 +17,13 @@ function Codigo() {
 
             <main>
                 <div className='barra'>
-                    <h3>Digite seu email...</h3>
+                    <input
+                        type="email"
+                        className='barras'
+                        placeholder="Digite seu email..."
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                    />
                 </div>
                 <div className='quadrados'>
                     <div className='quadrado'>

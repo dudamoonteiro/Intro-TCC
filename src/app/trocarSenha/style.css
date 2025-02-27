@@ -31,6 +31,30 @@ img {
     background-color: #FFD288;
     border-radius: 20px;
     margin: 60px;
+    padding: 20px;
+    font-size: 20px;
+    /* Define o tamanho do texto */
+    font-family: 'Roboto', sans-serif;
+    /* Fonte personalizada */
+    color: #805209;
+    /* Cor do texto digitado */
+    border: 2px solid #d89e5a;
+    /* Borda sutil */
+    display: flex;
+    align-items: center;
+    outline: none;
+    /* Remove a borda azul padrão ao focar */
+    overflow: hidden;
+    /* Evita que o texto saia da caixa */
+    direction: ltr;
+    /* Força o texto da esquerda para a direita */
+    text-align: left;
+    unicode-bidi: plaintext;
+}
+
+.barras:focus {
+    border-color: #FFA411;
+    /* Muda a cor da borda ao clicar */
 }
 
 main {
@@ -54,8 +78,25 @@ h3 {
 
 }
 
-h2{
+h2 {
     color: #805209;
-    font-family:'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    margin: 40px;
+}
+.enviar{
+    width: 300px;
+    height: 60px;
+    background-color: #FFD288;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h5{
+    color: #805209;
+    font-family: 'Roboto', sans-serif;
     margin: 30px;
+}
+p{
+    margin: 20px;
 }

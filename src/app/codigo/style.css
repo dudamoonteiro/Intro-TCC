@@ -28,15 +28,16 @@ img {
  
 }
 .barra{
-    width: 50%;
+    width: 700px;
     height: 70px;
     background-color: #FFD288;
     border-radius: 20px;
-    margin: 40px;
+    margin: 60px;
+    padding: 10px; /* Reduzido para melhor ajuste */
+    border: 2px solid #d89e5a;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 main{
     display: flex;
@@ -49,7 +50,8 @@ main{
 }
 h3{
     font-family: 'Roboto', sans-serif;
-    margin: 20px
+    margin: 20px;
+    color: #805209;
 }
 
 .quadrados{
@@ -96,4 +98,15 @@ h3{
 h4{
     font-family: 'Roboto', sans-serif;
     color: #805209;
+}
+.barras {
+    width: 100%; /* Faz o input ocupar toda a largura da div */
+    height: 100%;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: #805209;
+    outline: none;
+    padding: 0 10px; /* Adiciona espaço interno para o texto */
 }
