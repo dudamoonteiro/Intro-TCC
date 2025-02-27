@@ -6,7 +6,7 @@ function Camera() {
     return (
         <>
             <header>
-                <div className="icone"> <img src="/seta.png" alt="" /></div>
+                <div className="icone"> <img src="/icone.png" alt="" /></div>
                 <div className="barra">
                     <h1>COND TRACK</h1>
                 </div>

@@ -93,3 +93,15 @@ h5 {
     width: 90%;
     margin: 0 auto;
 }
+.input-sugestao {
+    width: 100%;
+    height: auto; /* Ajusta a altura conforme o conteúdo */
+    font-size: 18px;
+    border: none; /* Remove a borda */
+    outline: none; /* Remove a borda azul ao focar */
+    background: transparent; /* Torna o fundo transparente */
+    text-align: center; /* Centraliza o texto */
+    font-family: 'Roboto', sans-serif;
+    resize: none; /* Impede redimensionamento */
+    overflow: hidden; /* Esconde a barra de rolagem */
+}
