@@ -29,7 +29,7 @@ function Sugestao() {
                                 className="input-sugestao"
                                 value={texto}
                                 onChange={(e) => setTexto(e.target.value)}
-                                onBlur={() => setEditando(false)} // Sai do modo edição ao clicar fora
+                                onBlur={() => setEditando(false)} 
                                 autoFocus
                             />
                         ) : (

@@ -57,8 +57,9 @@ function Cadastro() {
 
               </Row>
               <Row className="flex-row gap-3 w-100 d-flex justify-content-center">
-                <button type="button" className="w-25 btn btn-outline-success">Entrar</button>
+                <button type="button" className="w-50 btn btn-outline-success">Entrar</button>
                 <button type="button" className="w-50 btn btn-outline-danger">Esqueci Senha</button>
+               
               </Row>
 
             </Form>

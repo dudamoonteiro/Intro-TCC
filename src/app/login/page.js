@@ -32,7 +32,16 @@ function Login() {
 
   return (
     <>
-      <MyNavbar></MyNavbar>
+      <header>
+        <div className="navbar">
+          <div className='logo'>
+            <img src="/icone.png" alt="" />
+            <h1>COND TRACK</h1>
+          </div>
+        </div>
+
+      </header>
+
       <div className="d-flex justify-content-end w-100 corpo">
         <Formik
           validationSchema={schema}
@@ -50,13 +59,13 @@ function Login() {
           {({ handleSubmit, handleChange, values, touched, errors }) => (
             <Form noValidate onSubmit={handleSubmit} className="form align-items-end justify-content-end">
               <h1 className={styles.title}>Login</h1>
-              <Row className="mb-column w-100">
-                <MyInput title={'Ramal'} className='w-100 rounded-3'></MyInput>
-                <MyInput title={'Senha'} className='w-100 rounded-3'></MyInput>
+              <Row className="mb-column w-80">
+                <MyInput title={'Ramal'} className='w-80 rounded-3'></MyInput>
+                <MyInput title={'Senha'} className='w-80 rounded-3'></MyInput>
               </Row>
               <Row className="flex-row gap-3 w-100 d-flex justify-content-center">
-                <button type="button" className="w-25 btn btn-outline-success">Entrar</button>
-                <button type="button" className="w-50 btn btn-outline-danger">Esqueci Senha</button>
+                <button type="button" class="w-50 btn btn-success">Entrar</button>
+                <button type="button" class="w-50 btn btn-danger">Esqueci senha</button>
               </Row>
 
             </Form>

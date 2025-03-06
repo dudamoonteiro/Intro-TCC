@@ -10,16 +10,14 @@ function Avisos() {
 
     const enviarAviso = () => {
         if (avisos.trim() === '') {
-            alert('Por favor, escreva algo antes de enviar!'); // Evita envio vazio
+            alert('Por favor, escreva algo antes de enviar!'); 
             return;
         }
 
         setMensagemVisivel(true);
-
-        // Opcional: Ocultar a mensagem após 3 segundos
         setTimeout(() => {
             setMensagemVisivel(false);
-            setnovoAviso(''); // Limpa o campo de texto
+            setnovoAviso(''); 
         }, 3000);
     };
 
