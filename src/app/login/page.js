@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import Image from "next/image";
 import styles from "./page.module.css";
@@ -11,14 +11,15 @@ import Row from 'react-bootstrap/Row';
 import * as formik from 'formik';
 import * as yup from 'yup';
 import './../globals.css';
+import { useRouter } from 'next/navigation'; // Use o hook useRouter do Next.js
 
-import './styles.css'
+import './styles.css';
 import MyInput from "../../../components/MyInput/MyInput";
-
+import { Lavishly_Yours } from "next/font/google";
 
 function Login() {
-
   const { Formik } = formik;
+  const router = useRouter(); // Instanciando o router do Next.js
 
   const schema = yup.object().shape({
     firstName: yup.string().required(),
@@ -39,44 +40,33 @@ function Login() {
             <h1>COND TRACK</h1>
           </div>
         </div>
-
       </header>
 
-      <div className="d-flex justify-content-end w-100 corpo">
-        <Formik
-          validationSchema={schema}
-          onSubmit={console.log}
-          initialValues={{
-            firstName: '',
-            lastName: '',
-            username: '',
-            city: '',
-            state: '',
-            zip: '',
-            terms: false,
-          }}
-        >
-          {({ handleSubmit, handleChange, values, touched, errors }) => (
-            <Form noValidate onSubmit={handleSubmit} className="form align-items-end justify-content-end">
-              <h1 className={styles.title}>Login</h1>
-              <Row className="mb-column w-80">
-                <MyInput title={'Ramal'} className='w-80 rounded-3'></MyInput>
-                <MyInput title={'Senha'} className='w-80 rounded-3'></MyInput>
-              </Row>
-              <Row className="flex-row gap-3 w-100 d-flex justify-content-center">
-                <button type="button" class="w-50 btn btn-success">Entrar</button>
-                <button type="button" class="w-50 btn btn-danger">Esqueci senha</button>
-              </Row>
-
-            </Form>
-          )}
-        </Formik>
+      <div className="corpo">
+        <div className="container">
+          <form className="form">
+            <h1>Login</h1>
+            <div className="form-container">
+              <label className="title">
+                Ramal
+              </label>
+              <input placeholder="Digite seu ramal" type="text">
+              </input>
+              <label className="title">
+                Senha
+              </label>
+              <input placeholder="Digite sua senha!" type="password"></input>
+              <div className="buttons">
+                <button className="bnt" type="submit">Entrar</button>
+                <button className="forget">Esqueci Senha</button>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
-      <div className="boasVindas">
-        <h3>Seu pedido entregue no coração do seu condomínio.</h3>
-
-      </div>
-
+      <footer>
+          <h3>Seu pedido entregue no coração do seu condomínio.</h3>
+      </footer>
     </>
   );
 }

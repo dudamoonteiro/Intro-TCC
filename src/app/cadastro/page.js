@@ -32,7 +32,15 @@ function Cadastro() {
 
   return (
     <>
-      <MyNavbar></MyNavbar>
+         <header>
+        <div className="navbar">
+          <div className='logo'>
+            <img src="/icone.png" alt="" />
+            <h1>COND TRACK</h1>
+          </div>
+        </div>
+      </header>
+      
       <div className="d-flex align-items-end w-100 corpo2 flex-column">
         <Formik
           validationSchema={schema}
@@ -56,12 +64,12 @@ function Cadastro() {
                 <MyInput title={'Senha'} className='w-100 rounded-3'></MyInput>
 
               </Row>
-              <Row className="flex-row gap-3 w-100 d-flex justify-content-center">
-                <button type="button" className="w-50 btn btn-outline-success">Entrar</button>
-                <button type="button" className="w-50 btn btn-outline-danger">Esqueci Senha</button>
-               
+              <Row className="botoes-login">  
+                <button type="submit" className="w-50 btn btn-success">
+                  Entrar
+                </button>
+                <button type="button" className="w-50 btn btn-danger">Esqueci senha</button>
               </Row>
-
             </Form>
           )}
           

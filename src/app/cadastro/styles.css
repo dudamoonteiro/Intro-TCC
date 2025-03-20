@@ -23,6 +23,18 @@ body{
     width: 100%;
     height: 85%;
 }
+.navbar {
+    width: 100%;
+    height: 90px;
+    background-color: #FFA411;
+    color: white;
+}
+.header {
+    padding: 0%;
+}
+img{
+    height: 90px;
+   }
 
 .corpo2::after {
     content: "";
@@ -33,6 +45,14 @@ body{
     height: 100%;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, #DDD4CE 100%);
     pointer-events: none; /* Garante que não interfira com interações na página */
+}
+.logo {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 90%;
+    gap: 50px;
+    margin: 0 auto;
 }
 
 
@@ -59,4 +79,16 @@ body{
     width: 30%;
   
 }
+.botoes-login {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+}
 
+.botoes-login button {
+    width: 40%; 
+    max-width: 150px; 
+    padding: 8px 12px; 
+    font-size: 14px; 
+    border-radius: 8px; 
+}
