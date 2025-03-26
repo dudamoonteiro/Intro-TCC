@@ -75,3 +75,39 @@ h2{
     align-items: center;
     justify-content: center;
 }
+
+@media (max-width: 1023px) {
+    .retangulo{
+        height: 700px;
+        width: 200px;
+        background: linear-gradient(to top, #DDD4CE, #FFA411);
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        padding: 70px;
+    }
+    .container { 
+        display: flex; 
+        justify-content: space-between; 
+        width: 50%; 
+    }
+    .bloco{
+        width: 200px;
+        height: 130px;
+        background-color: #805209;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    h2{
+        font-size: 20px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    
+}

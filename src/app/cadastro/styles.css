@@ -4,24 +4,34 @@ html {
     position: relative;
     background: linear-gradient(to bottom, #DDD4CE 0%, #DDD4CE 100%);
     height: 100vh;
-    overflow-y: auto;
-    scrollbar-width: auto; /* Firefox: oculta a barra */
+ 
+  
 }
 
 body{
     overflow-y: hidden;
     background-color: transparent
 }
-.corpo2{
+.corpo{
     margin: 0;
     padding: 0;
     position: relative;
-    background-image: url(/fundoCadastro.jpg);
+    background-image: url(/fundo_cadastro.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
     height: 85%;
+}
+.corpo::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, #DDD4CE 100%);
+    pointer-events: none;
 }
 .navbar {
     width: 100%;
@@ -36,16 +46,6 @@ img{
     height: 90px;
    }
 
-.corpo2::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, #DDD4CE 100%);
-    pointer-events: none; /* Garante que não interfira com interações na página */
-}
 .logo {
     display: flex;
     align-items: center;
@@ -56,39 +56,207 @@ img{
 }
 
 
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    width: 100%;
+    height: 75%;
+}
+
 .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: rgb(255, 210, 136, 0.75);
     border-color: #FFD288;
     border-radius: 25px;
-    width:43vh;
-    height: 80vh;
-    margin: 100px;
-    margin-right: 250px;
+    width: 43vh;
+    height: 45vh;   
+    margin-top: 200px;
     
 }
 
+form h1{
+    width: 80%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    color: #805209;
+}
 
-.boasVindas{
-    width: fit-content;
-    height: fit-content;
+.form-container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    align-items: start;
+    justify-content: start;
+    gap: 3px;
+   
+    
+}
+
+.boasVindas {
     color: #805209;
     font-family: "Roboto", serif;
     margin-left: 50px;
-    margin-bottom: 100px;
-    z-index: 2;
-    width: 30%;
-  
+    margin-bottom: 60px;
+    font-size: 15px;
 }
+
+input{
+    background-color: #805209;
+    color: white;
+    border-radius: 20px;
+    height: 10%;
+    width: 90%;
+    outline: none;
+    border: transparent;
+    padding: 4%;
+    caret-color: white;
+}
+input::placeholder{
+    color: white;
+}
+
 .botoes-login {
     display: flex;
     justify-content: center;
-    gap: 10px; 
+    gap: 30px; 
 }
 
-.botoes-login button {
-    width: 40%; 
-    max-width: 150px; 
+.buttons{
+    gap: 6%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    width: 50%; 
+    max-width: 60%; 
     padding: 8px 12px; 
     font-size: 14px; 
     border-radius: 8px; 
+    
+}
+.bnt{
+    background-color: #27a041;
+    color: white;
+    border: transparent;
+    margin: 30px;
+}
+
+label{
+    color: #805209;
+    font-size: x-large;
+}
+
+.forget{
+    background-color: transparent;
+    color: #805209;
+    border: transparent;
+}
+
+.w-80 rounded-3{
+    width: 90%;
+   
+}
+
+h3{
+    color: #805209;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+@media (max-width: 900px) {
+    .container{
+        align-items: center;
+        width: 20vh;
+        height: 23vh;   
+       
+    }
+    h3{
+        font-size: small;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .form{
+       margin-top: 300%;
+    }
+    
+    
+}
+@media (max-width: 321px) {
+    .container{
+        align-items: center;
+    }
+    h3{
+        font-size: small;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0%;
+        padding: 10px;
+        position: relative;
+        top: -20px;
+      
+    }
+    .form{
+        width: 180%;
+        height: 190%;
+    }
+    .form-container{
+        width: 60%;
+
+    }
+    h1{
+        font-size:x-large;
+    }
+    img{
+        height: 70px;
+    }
+    
+}
+@media (max-width: 1025px) {
+    .container{
+        align-items: center;
+        width: 20vh;
+        height: 23vh;   
+       
+    }
+    h3{
+        font-size: medium;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .form{
+       margin-top: 300%;
+    }
+    
+    
+}
+@media (max-width: 581px) {
+   
+    h3{
+        font-size: small;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0%;
+        padding: 10px;
+        position: relative;
+        top: -20px;
+    }
+   
+    
 }

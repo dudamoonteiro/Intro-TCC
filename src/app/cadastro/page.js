@@ -41,44 +41,36 @@ function Cadastro() {
         </div>
       </header>
       
-      <div className="d-flex align-items-end w-100 corpo2 flex-column">
-        <Formik
-          validationSchema={schema}
-          onSubmit={console.log}
-          initialValues={{
-            firstName: '',
-            lastName: '',
-            username: '',
-            city: '',
-            state: '',
-            zip: '',
-            terms: false,
-          }}
-        >
-          {({ handleSubmit, handleChange, values, touched, errors }) => (
-            <Form noValidate onSubmit={handleSubmit} className="form align-items-end justify-content-end">
-              <h1 className={styles.title}>Cadastrar</h1>
-              <Row className="mb-column w-100">
-                <MyInput title={'Ramal'} className='w-100 rounded-3'></MyInput>
-                <MyInput title={'Email'} className='w-100 rounded-3'></MyInput>
-                <MyInput title={'Senha'} className='w-100 rounded-3'></MyInput>
-
-              </Row>
-              <Row className="botoes-login">  
-                <button type="submit" className="w-50 btn btn-success">
-                  Entrar
-                </button>
-                <button type="button" className="w-50 btn btn-danger">Esqueci senha</button>
-              </Row>
-            </Form>
-          )}
-          
-        </Formik>
-        <div className="align-items-start w-100 boasVindas">
-        <h4 className="boasVindas">Sua entrega realizada com eficiência e comodidade
-        dentro do seu condomínio.</h4>
+      <div className="corpo">
+        <div className="container">
+          <form className="form">
+            <h1>Login</h1>
+            <div className="form-container">
+              <label className="title">
+                Ramal
+              </label>
+              <input placeholder="Digite seu ramal" type="text">
+              </input>
+              <label className="title">
+                Email
+              </label>
+              <input placeholder="Digite seu email" type="email">
+              </input>
+              <label className="title">
+                Senha
+              </label>
+              <input placeholder="Digite sua senha!" type="password"></input>
+              <div className="buttons">
+                <button className="bnt" type="submit">Cadastrar</button>
+                
+              </div>
+            </div>
+          </form>
         </div>
       </div>
+      <footer>
+          <h3>Sua entrega realizada com eficiência e comodidade dentro do seu condomínio.</h3>
+      </footer>
     </>
   );
 }
