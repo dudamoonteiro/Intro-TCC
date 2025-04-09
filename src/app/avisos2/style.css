@@ -82,7 +82,7 @@ h5 {
 }
 
 .editar img {
-    width: 2vw;
+    /* max-width: 1.5vw; */
     max-width: 25px;
 }
 
@@ -90,11 +90,27 @@ h5 {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    height: 18vh;
+    /* height: 14vh; */
+    height: 40%;
     gap: 1vw;
     padding-right: 3vw;
 }
-@media (max-width: 320px) {
+
+@media  (max-width: 488px ){
+
+    .editar{
+        height: 30%;
+    }
+
+}
+@media  (max-width: 435px ){
+
+    .editar{
+        height: 20%;
+    }
+
+}
+@media (max-width: 321px) {
     .container{
         align-items: center;
     }
