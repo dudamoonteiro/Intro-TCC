@@ -22,11 +22,13 @@ function Avisos2() {
                         <p> °[AMANHÃ] Desinsetização nas áreas comuns 🦟</p>
                         <p>°[PRÓXIMO FINAL DE SEMANA] Fechamento da garagem para pintura 🚗🎨</p>
                         <div className='editar'>
-                    <img src="/lixo.png" alt="" />
-                    <img src="/editar.png" alt="" />
+                            <div className='img2'>
+                                <img src="/lixo.png" alt="" />
+                                <img src="/editar.png" alt="" />
+                            </div>
+                        </div>
                     </div>
-                    </div>
-                   
+
                 </div>
             </main>
         </>
