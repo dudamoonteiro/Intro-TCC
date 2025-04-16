@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 body {
     position: relative;
     background: linear-gradient(to bottom, #FFA411 40%, #DDD4CE 100%);
@@ -15,8 +14,6 @@ p {
     width: 100%;
     background-color: #FFA411;
     color: white;
-
-
 }
 
 .header {
@@ -29,23 +26,23 @@ h5 {
 }
 
 .barra {
-    width: 2000;
-    height: 20px;
+    width: 100%;
+    height: 2vh;
     background-color: #805209;
 }
 
 .pendentes {
     width: 80%;
-    height: 60px;
-    border-radius: 10px;
+    height: 7vh;
+    border-radius: 1.5vh;
     background-color: #FFD288;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
-    margin: 40px;
-    padding: 20px;
-    font-size: 30px;
+    margin: 5vh;
+    padding: 2.5vh;
+    font-size: 3vh;
     color: #805209;
 }
 
@@ -54,35 +51,31 @@ h5 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .botao {
-    width: 70px;
-    height: 30px;
+    width: 5vw;
+    height: 3vh;
     background-color: #4BAD00;
-    border-radius: 15px;
+    border-radius: 2vh;
 }
 
 .entrega {
     width: 80%;
-    height: 300px;
+    height: 35vh;
     background-color: #FFD288;
     display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 2vw;
 }
 
 .grande {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    margin: 40px;
-}
-
-.grande img {
-    margin-left: 150px;
+    margin: 5vh;
 }
 
 .logo {
@@ -92,4 +85,688 @@ h5 {
     flex-direction: row;
     width: 80%;
     margin: 0 auto;
+}
+
+@media (max-width: 1185px) {
+
+    .pessoa img {
+        width: 100px;
+    }
+
+    .caminhao img {
+        width: 130px;
+    }
+
+    .risco img {
+        width: 300px;
+
+    }
+}
+
+@media (max-width: 950px) {
+
+    .pessoa img {
+        width: 100px;
+    }
+
+    .caminhao img {
+        width: 130px;
+    }
+
+    .risco img {
+        width: 300px;
+
+    }
+
+    p {
+        font-size: 25px;
+    }
+
+    img {
+        width: 130px;
+    }
+
+    h5 {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 935px) {
+
+    .pessoa img {
+        width: 100px;
+    }
+
+    .caminhao img {
+        width: 130px;
+    }
+
+    .risco img {
+        width: 300px;
+
+    }
+
+    p {
+        font-size: 23px;
+    }
+
+    img {
+        width: 130px;
+    }
+
+    h5 {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 860px) {
+
+    .pessoa img {
+        width: 90px;
+    }
+
+    .caminhao img {
+        width: 120px;
+    }
+
+    .risco img {
+        width: 290px;
+
+    }
+
+    p {
+        font-size: 21px;
+    }
+
+    img {
+        width: 120px;
+    }
+
+    h5 {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 795px) {
+
+    .pessoa img {
+        width: 90px;
+    }
+
+    .caminhao img {
+        width: 120px;
+    }
+
+    .risco img {
+        width: 290px;
+
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    img {
+        width: 120px;
+    }
+
+    h5 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 755px) {
+
+    .pessoa img {
+        width: 80px;
+    }
+
+    .caminhao img {
+        width: 110px;
+    }
+
+    .risco img {
+        width: 280px;
+
+    }
+
+    p {
+        font-size: 19px;
+    }
+
+    img {
+        width: 120px;
+    }
+
+    h5 {
+        font-size: 15px;
+    }
+    .botao {
+        width: 8vw;
+        height: 3vh;
+        background-color: #4BAD00;
+        border-radius: 2vh;
+    }
+}
+
+@media (max-width: 705px) {
+
+    .pessoa img {
+        width: 70px;
+    }
+
+    .caminhao img {
+        width: 100px;
+    }
+
+    .risco img {
+        width: 270px;
+
+    }
+
+    p {
+        font-size: 19px;
+    }
+
+    img {
+        width: 120px;
+    }
+
+    h5 {
+        font-size: 15px;
+    }
+
+    .entrega {
+        width: 80%;
+        height: 30vh;
+        background-color: #FFD288;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+    }
+    .botao {
+        width: 8vw;
+        height: 3vh;
+        background-color: #4BAD00;
+        border-radius: 2vh;
+    }
+}
+@media (max-width: 670px) {
+
+    .pessoa img {
+        width: 70px;
+    }
+
+    .caminhao img {
+        width: 100px;
+    }
+
+    .risco img {
+        width: 270px;
+
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    img {
+        width: 120px;
+    }
+
+    h5 {
+        font-size: 0px;
+    }
+
+    .entrega {
+        width: 90%;
+        height: 25vh;
+        background-color: #FFD288;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+    }
+
+    h1 {
+        margin-left: 180px;
+    }
+    .botao {
+        width: 8vw;
+        height: 3vh;
+        background-color: #4BAD00;
+        border-radius: 2vh;
+    }
+}
+@media (max-width: 616px) {
+
+    .pessoa img {
+        width: 60px;
+    }
+
+    .caminhao img {
+        width: 90px;
+    }
+
+    .risco img {
+        width: 280px;
+
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    img {
+        width: 120px;
+    }
+
+    h5 {
+        font-size: 0px;
+    }
+
+    .entrega {
+        width: 90%;
+        height: 25vh;
+        background-color: #FFD288;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+    }
+    h1 {
+        margin-left: 160px;
+    }
+    .botao {
+        width: 8vw;
+        height: 3vh;
+        background-color: #4BAD00;
+        border-radius: 2vh;
+    }
+}
+@media (max-width: 588px) {
+
+    .pessoa img {
+        width: 60px;
+    }
+
+    .caminhao img {
+        width: 90px;
+    }
+
+    .risco img {
+        width: 260px;
+
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    img {
+        width: 120px;
+    }
+
+    h5 {
+        font-size: 0px;
+    }
+
+    .entrega {
+        width: 90%;
+        height: 25vh;
+        background-color: #FFD288;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+    }
+
+    h1 {
+        margin-left: 140px;
+    }
+    .botao {
+        width: 8vw;
+        height: 3vh;
+        background-color: #4BAD00;
+        border-radius: 2vh;
+    }
+}
+@media (max-width: 560px) {
+
+    .pessoa img {
+        width: 60px;
+    }
+
+    .caminhao img {
+        width: 90px;
+    }
+
+    .risco img {
+        width: 220px;
+
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    img {
+        width: 120px;
+    }
+
+    h5 {
+        font-size: 0px;
+    }
+
+    .entrega {
+        width: 90%;
+        height: 25vh;
+        background-color: #FFD288;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+    }
+
+    h1 {
+        margin-left: 120px;
+    }
+    .botao {
+        width: 8vw;
+        height: 3vh;
+        background-color: #4BAD00;
+        border-radius: 2vh;
+    }
+}
+@media (max-width: 532px) {
+
+    .pessoa img {
+        width: 60px;
+    }
+
+    .caminhao img {
+        width: 90px;
+    }
+
+    .risco img {
+        width: 140px;
+
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    img {
+        width: 110px;
+    }
+
+    h5 {
+        font-size: 0px;
+    }
+
+    .entrega {
+        width: 90%;
+        height: 25vh;
+        background-color: #FFD288;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+    }
+
+    h1 {
+        margin-left: 80px;
+    }
+    .botao {
+        width: 12vw;
+        height: 3vh;
+        background-color: #4BAD00;
+        border-radius: 2vh;
+    }
+}
+@media (max-width: 461px) {
+
+    .pessoa img {
+        width: 60px;
+    }
+
+    .caminhao img {
+        width: 90px;
+    }
+
+    .risco img {
+        width: 140px;
+
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    img {
+        width: 110px;
+    }
+
+    h5 {
+        font-size: 0px;
+    }
+
+    .entrega {
+        width: 90%;
+        height: 25vh;
+        background-color: #FFD288;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+    }
+
+    h1 {
+        margin-left: 50px;
+        font-size: 30px;
+    }
+    .botao {
+        width: 12vw;
+        height: 3vh;
+        background-color: #4BAD00;
+        border-radius: 2vh;
+    }
+}
+@media (max-width: 432px) {
+
+    .pessoa img {
+        width: 60px;
+    }
+
+    .caminhao img {
+        width: 90px;
+    }
+
+    .risco img {
+        width: 120px;
+
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    img {
+        width: 110px;
+    }
+
+    h5 {
+        font-size: 0px;
+    }
+
+    .entrega {
+        width: 90%;
+        height: 25vh;
+        background-color: #FFD288;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+    }
+
+    h1 {
+       
+        font-size: 25px;
+    }
+    .botao {
+        width: 12vw;
+        height: 3vh;
+        background-color: #4BAD00;
+        border-radius: 2vh;
+    }
+}
+@media (max-width: 406px) {
+
+    .pessoa img {
+        width: 60px;
+    }
+
+    .caminhao img {
+        width: 90px;
+    }
+
+    .risco img {
+        width: 100px;
+
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    img {
+        width: 110px;
+    }
+
+    h5 {
+        font-size: 0px;
+    }
+
+    .entrega {
+        width: 90%;
+        height: 25vh;
+        background-color: #FFD288;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+    }
+
+    h1 {
+       
+        font-size: 22px;
+    }
+    .botao {
+        width: 12vw;
+        height: 3vh;
+        background-color: #4BAD00;
+        border-radius: 2vh;
+    }
+}
+@media (max-width: 380px) {
+
+    .pessoa img {
+        width: 60px;
+    }
+
+    .caminhao img {
+        width: 80px;
+    }
+
+    .risco img {
+        width: 80px;
+
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    img {
+        width: 110px;
+    }
+
+    h5 {
+        font-size: 0px;
+    }
+
+    .entrega {
+        width: 90%;
+        height: 25vh;
+        background-color: #FFD288;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+    }
+
+    h1 {
+       
+        font-size: 22px;
+    }
+    .botao {
+        width: 12vw;
+        height: 3vh;
+        background-color: #4BAD00;
+        border-radius: 2vh;
+    }
+}
+@media (max-width: 365px) {
+
+    .pessoa img {
+        width: 50px;
+    }
+
+    .caminhao img {
+        width: 60px;
+    }
+
+    .risco img {
+        width: 90px;
+
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    img {
+        width: 90px;
+    }
+
+    h5 {
+        font-size: 0px;
+    }
+
+    .entrega {
+        width: 100%;
+        height: 18vh;
+        background-color: #FFD288;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+    }
+
+    h1 {
+       
+        font-size: 18px;
+    }
+    .botao {
+        width: 18vw;
+        height: 3vh;
+        background-color: #4BAD00;
+        border-radius: 2vh;
+    }
+    main{
+        margin-top: 90px;
+    }
+
 }
